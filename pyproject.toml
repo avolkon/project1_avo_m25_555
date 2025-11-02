@@ -1,9 +1,9 @@
 [project]
 name = "project1-avo-m25-555"
 version = "0.1.0"
-description = "Текстовая игра Лабиринт сокровищ ДЗ1 М25-555 Анастасия Волконская"
+description = "ДЗ1 Текстовая игра Лабиринт сокровищ Анастасия Волконская М25-555"
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "avo",email = "aavolkon@mail.ru"}
 ]
 readme = "README.md"
 requires-python = ">=3.14"
@@ -14,5 +14,9 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-[tool.poetry.scripts]
-project = "labyrinth_game.main:main" 
+packages = [
+     { include = "labyrinth_game" },
+ ]
+
+ [tool.poetry.scripts]
+project = "labyrinth_game.main:main"
